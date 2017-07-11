@@ -1,0 +1,1817 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0px;
+                background-color: #f5f5f5;
+            }
+            .navbar {
+            position: relative;
+            min-height: 10px;
+            margin-bottom: 0px;
+            border: 1px solid #e8e8e8;
+            border-radius: 0;
+          }
+                    
+          .list{
+            font-size: 11px;
+            margin: 10px 0;
+          } 
+
+          .nav>li>a:hover, .nav>li>a:focus {
+              text-decoration: none;
+               background-color: transparent; 
+               color: #1e1f1f;
+          }
+          a {
+             color: #1e1f1f;
+              text-decoration: none;
+              
+            }
+            .p1{
+              font-size: 13px;
+              margin-top: -12px;
+            }
+            .first{
+               margin-right: 100px;
+               height: 26px;
+               
+            }
+            .log{
+              margin-top: 3px;
+              padding-bottom: 6px;
+              height: 20px;
+              font-size: 12px;
+              width: 70px;
+              background: #2e6da4;
+              border: 1px solid #2e6da4;
+              border-radius: 2px;
+              color: white;
+            }
+            .b1 {
+              border-left: 1px solid #777;
+              padding-left: 10px;
+            }
+            .b2{
+              border-right: 1px solid #777;
+              padding-right: 10px;
+            }
+            .wrap{
+              margin: 0px 80px 0px 100px;
+              background-color: white;
+            }
+            .rw1{
+              margin-top: 10px;
+              margin-bottom: 20px;
+              margin-left: 0px;
+            }
+            .col1{
+              margin-left: -30px;
+            }
+            .inner-addon { 
+              position: relative; 
+              margin: 10px;
+          }
+          input.form-control{
+            border-radius: 0px;
+           border: 1px solid #456c95;
+          }
+          
+          /* style icon */
+          .inner-addon .fa {
+            position: absolute;
+            padding: 10px;
+            pointer-events: none;
+          }
+
+          /* align icon */
+          .left-addon .fa  { left:  0px;}
+          .right-addon .fa { right: 0px;}
+
+          /* add padding  */
+          .left-addon input  {
+           padding-left:  30px;
+            }
+          .right-addon input {
+           padding-right: 30px;
+            }
+            .col2{
+              margin-left: -40px;
+              margin-top: 10px;
+            }
+            .searchb{
+              height: 34px;
+              width: 110px;
+              background-color: orange;
+              border: 1px solid #456c95;
+            }
+            .col3{
+              margin-left: 100px;
+              margin-top: 75px;
+            }
+            .carts{
+              font-size:  
+            }
+            .cart:hover{
+             color: orange; 
+             text-decoration: none; 
+            }
+            .one{
+              padding: 1px 5px;
+              border-radius: 50%;
+              background-color: red;
+              color: white;
+              text-decoration: none;
+
+            }
+            nav.navbar.navbar-default.nav2{
+              margin-left: -25px;
+              border-radius: 0;
+              border-top: 2px solid grey;
+              border-bottom: 1px solid grey;
+            }
+            .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+             margin-right:10px;
+           }
+
+           #menu-wrapper{
+  margin-left:-30px;
+  margin-right: auto;
+  width: 1200px;
+
+  position:relative;
+
+}
+
+
+.sw,
+.sw a,
+.sw ul,
+.sw li,
+.sw div,
+.sw form,
+.sw input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.sw a { text-decoration: none; }
+
+.sw li { list-style: none; }
+
+/* Menu Container */
+.sw {
+  display: inline-block;
+  position: relative;
+  cursor: default;
+  z-index: 500;
+
+}
+
+/* Menu List */
+.sw > li {
+  display: block;
+  float: left;
+}
+
+/* Menu Links */
+.sw > li > a {
+  position: relative;
+  display: block;
+  z-index: 510;
+  height: 54px;
+  padding: 0 30.5px;
+  line-height: 54px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #222;
+  border-top:2px solid #456c95;
+  border-bottom:1px solid #456c95;
+  background: #fff;
+  
+  transition: all .3s ease;
+}
+
+.sw > li:hover > a { 
+  background: #456c95; 
+  color:#fff;
+}
+.side-form input[type="text"]{
+width: 250px;
+margin-left: 12px;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+outline: none;
+}
+
+
+
+
+
+
+/* Menu Dropdown */
+.sw > li > div {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 50px;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 0 0 3px 3px;
+
+  -webkit-transition: all .3s ease .15s;
+  -moz-transition: all .3s ease .15s;
+  -o-transition: all .3s ease .15s;
+  -ms-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
+}
+
+.sw > li:hover > div {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
+
+/* Menu Content Styles */
+.sw .sw-column {
+  float: left;
+  width: 190px;
+  padding-right:2.5%;
+  padding-left:1.5%;
+}
+
+.sw .sw-column h5 {
+  margin: 20px 0 10px 0;
+  line-height: 18px;
+  
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #372f2b;
+  text-transform: uppercase;
+}
+
+.sw .sw-column h3.orange { color: #ff722b; }
+
+.sw .sw-column li a {
+  display: block;
+  line-height: 26px;
+  
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  color: #888888;
+}
+
+.sw .sw-column li a:hover { color:#2B3856; }
+.adverts{
+  display: flex;
+  width: 1170px;
+  margin-left: 50px;
+  margin-top: -5px;
+}
+          
+           .rw2{
+            margin: 15px 15px;
+            
+           }
+           .homelink{
+            color: #325d88;
+           }
+            .rw3{
+            margin-top: 5px;
+           margin-bottom: 40px;
+           background-color: ;
+           margin-left: -23px;
+             
+           }
+          p{
+            font-size: 16px;  
+           }
+           
+           .fitness{
+
+          list-style-type: none;
+          border-bottom: 1px solid #f3f3f3;
+          padding-bottom: 5px;
+          color: #525252;
+                 }
+                 .rw3 ul li :hover {
+          padding: 6px 0px;
+          list-style-type: none;
+          border-bottom: 3px solid #325D88;
+          color: #325D88;
+            }
+
+          .fitlink{
+            font-size: 16px;
+            font-weight: normal;
+            text-decoration: none;
+            padding: 5px 0px;
+            color: rgb(162, 162, 162);
+          }
+
+          .fitlink:hover{
+            text-decoration: none;
+          }
+          .carousel1{
+            margin-top: 20px
+          }
+           .img2{
+            height: 400px;
+           }
+           .img1{
+            width: 310px;
+            height: 104px;
+            margin-left: -30px;
+           }
+           
+           h4{
+            color: #d40707;
+           }
+           .all{
+             background:white;
+            }
+           .s1{
+            margin-left: -16px;
+           }
+
+
+
+           .ribone{
+            content: "";
+            height:0;
+            width: 0;
+            display: block;
+            position: absolute;
+            left: 12px;
+            top: -9px;
+            border-color: #d40707 transparent transparent #d40707;
+            border-style: solid;
+            border-width: 32px;
+
+           }
+
+           .span{
+            position: relative;
+            margin-top: -115px;
+            margin-left: -1px;
+            z-index: 1!important;
+            color: white;
+           }
+           .span span{
+            display: block;
+           }
+
+
+           .gionee{
+            margin-top: 10px;
+            padding-bottom: 1px;
+            
+           }
+           .phones-1{
+            height: 100px;
+            width: 90px;
+            margin-top: 10px;
+            margin-left: 3px;
+           }
+           .addbtn{
+           background-color: orange;
+           padding: 1px 32px;
+           font-size: 9px; 
+           border: 1px solid orange;
+           border-radius: 2px;
+           }
+           .rw4{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .im{
+            height: 30px;
+            width: 30px;
+           }
+           .women{
+            background-color: #cc327b;
+            color: white;
+           }
+           .view{
+            background-color: rgb(210, 210, 210);
+            width: 195px;
+            margin-left: -15px;
+
+           }
+           .bae{
+            margin-left: -15px;
+            height: 280px;
+           }
+           .bae1{
+              height: 140px;
+              width: 150px;
+           }
+           .bae2{
+              height: 140px;
+              width: 250px;
+           }
+           .box{
+              box-shadow: 1px 0 lightgrey;
+           }
+           .rw5{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .shirt{
+            background-color: #155970;
+            color: white;
+           }
+           .rw6{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .phone{
+            background-color: #cd0027;
+            color: white;
+           }
+           .rw7{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .computer{
+            background-color: #86acb7;
+            color: white;
+           }
+           .rw8{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .electronic{
+            background-color: #1885c2;
+            color: white;
+           }
+           .rw9{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .home{
+            background-color: #a5b72f;
+            color: white;
+           }
+           .rw10{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .beauty{
+            background-color: #4b2f85;
+            color: white;
+           }
+           .rw11{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .power{
+            background-color: #b5934a;
+            color: white;
+           }
+           .rw12{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border-top: 2px solid grey;
+           }
+           .other{
+            background-color: #8e9578;
+            color: white;
+           }
+
+           .rw13{
+            margin-top: 10px;
+            margin-left: -23px;
+            background-color: white;
+            border: 1px solid #cfcfcf;
+            height: 350px;
+           }
+           .itemz{
+             border-right: 1px solid #cfcfcf;
+             height: 349px;
+           }
+           .rw14{
+            margin-top: 10px;
+            margin-left: -40px;
+            
+           }
+
+           
+           footer{
+            background: #464646;
+            border-top: 2px solid #325d88;
+            box-shadow: none;
+            margin-top: 100px;
+            color: #858585;
+            font-size: 12px;
+            position: relative;
+            padding-top: 8px;
+           }
+           .nine{
+            margin-left: -30px;
+           }
+           .kon{
+            margin-left: -3px;
+           }
+           .img{
+            position: relative;
+            width: 176px;
+            height: 83px;
+           }
+           .imgsprit{
+            position: absolute;
+            width: 176px;
+            height: 83px;
+            left: 50%;
+            top: -84%;
+            margin-left: 400px;
+            margin-top: 176px;
+            background-image: url('./img/sprite.png');
+            background-position: 0-123px;
+           }
+           .imgm{
+            position: relative;
+            width: 192px;
+            height: 27px;
+           }
+           .imgmaster{
+            position: absolute;
+            width: 192px;
+            height: 27px;
+            border-bottom: 1px solid #858585;
+            background-image: url('./img/sprite.png');
+            background-position: -11-0px;
+           }
+           .imga{
+            position: relative;
+            width: 46px;
+            height: 46px;
+           }
+           .imgapple{
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            
+            background-image: url('./img/sprite.png');
+            background-position: -10px -213px;
+            }
+            .imgapp{
+            position: relative;
+            width: 45px;
+            height: 45px;
+           }
+           .imgapps{
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            
+            background-image: url('./img/sprite.png');
+            background-position: -60px -213px;
+            }
+            .imgtb{
+            position: relative;
+            width: 600px;
+            height: 31px;
+           }
+           .imgtbank{
+            position: absolute;
+            width:600px;
+            height: 31px;
+            border-bottom: 1px solid #858585;
+            background-image: url('./img/sprite.png');
+            background-position: -10px -44px;
+            margin-left: -250px;
+           }
+
+           .imgsh{
+            position: relative;
+            width: 273px;
+            height: 33px;
+           }
+           .imgship{
+            position: absolute;
+            width: 273px;
+            height: 33px;
+            margin-top: -25px;
+            margin-left: -50px;
+            background-image: url('./img/sprite.png');
+            background-position: -10px -90px;
+           }
+           .imgface{
+            position: relative;
+            width: 273px;
+            height: 33px;
+           }
+           .imgfacebook{
+            position: absolute;
+            width: 273px;
+            height: 33px;
+            margin-top: 5px;
+            margin-left: -135px;
+            background-image: url('./img/sprite.png');
+            background-position: -301px -89px;
+           }
+           
+            .white{
+              color: #858585;
+              
+            }
+            .whitez{
+              color: #858585;
+              margin-left: 30px;
+              
+            }
+            .heading{
+              color: white;
+              font-size: 14px;
+            }
+            .heading1{
+              color: #858585;
+              font-size: 14px;
+            }
+            .hr{
+              border-bottom: 1px solid #858585;
+              padding-bottom: 5px;
+            }
+
+            .r1{
+              border-right: 1px solid #858585;
+              padding-right: 5px;
+            }
+
+
+            .sub{
+              margin-left: 1px;
+            }
+            .newsinput{
+              width: 168px;
+              height: 36px;
+              background: white;
+            }
+            .subscribe{
+              margin-left: 110px;
+              margin-top: -1px;
+              height: 38px;
+              font-size: 13px;
+              border: 1px solid #636363;
+              color: #404040;
+              font-weight: normal;
+              box-shadow: none;
+              text-shadow: none;
+              background: #faa624;
+            }
+            .live{
+              cursor: pointer;
+              z-index: 9500;
+              position: fixed;
+              height: 118px;
+              bottom: 10px;
+              right: 0px;
+
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav pull-right first">
+          <li><a  href="#"><p class="p1 b1">Track My Order</p></a></li>
+          <li><a  href="#"><p class="p1 b1">Sell on Konga</p></a></li>
+          <li><a  href="#"><p class="p1 b1">Seller Academy</p></a></li>
+          <li><a  href="#"><p class="p1 b1 b2">Sign Up</p></a></li>
+          <li><button class="log btn-xm">Log In</button></li>
+        </ul>
+      </nav>
+      
+      <div class="container wrap">
+        <div class="row rw1">
+          <div class="col-md-3 col1">
+            <img src="img/kongalogo.png">
+          </div>
+          <div class="col-md-6 col1">
+            <div class="inner-addon left-addon">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" placeholder="Search for a product, category or brand"/>
+            </div>
+
+          </div>
+          <div class="col-md-1 col2">
+            <button class="searchb">search</button>
+          </div>
+          <div class="col-md-2 col3">
+            <i class="fa fa-heart-o fa-1x carts"> <a class="cart" href="#"><strong>Liked Items</strong></a></i>
+            <i class="fa fa-shopping-cart fa-1x carts"> <a class="cart" href="#"><strong> Cart</strong></a>&nbsp <a class="one" href="#">1</a></i>
+            
+          </div>
+          
+        </div>
+        
+        
+        <div class="container">
+          <div id="menu-wrapper">
+               <ul class="sw">
+               <li>
+                <a href="#">Phones & Tablets</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+                 <li>
+                <a href="#">Computer & Accessories</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+                 <li>
+                <a href="#">Electronics</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+                 <li>
+                <a href="#">Konga Fashion</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+                 <li>
+                <a href="#">Home & Kitchen</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+                 <li>
+                <a href="#">Baby, Kids & Toys</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+                 <li>
+                <a href="#">Other Categories</a>
+                <div>
+                   <div class="sw-column">
+                       <h5>Mobile Phones</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Phones & Tablet Accessories</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Tablets</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>By OS</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                             <div class="sw-column">
+                       <h5>Shop by Prices</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                       <div class="sw-column">
+                       <h5>Top Brands</h5>
+                       <hr>
+                       <ul>
+                         <li><a href="#">Nokia</a></li>
+                         <li><a href="#">Blackberry</a></li>
+                         <li><a href="#">Infinix</a></li>
+                         <li><a href="#">Samsung</a></li>
+                         <li><a href="#">Apple</a></li>
+                         <li><a href="#">Gionee</a></li>
+                         <li><a href="#">Partner Mobile</a></li>
+                         <li><a href="#">Lenovo</a></li>
+                         <li><a href="#">Techno</a></li>
+                         <li><a href="#">Other Brands</a></li>
+                         <li><a href="#">Alcatel One Touch</a></li>
+                                     <li><a href="#">Itel</a></li>
+                       </ul>
+                      </div><!-- end sw-column -->
+                    </div><!-- end div -->
+                 </li>
+               </ul><!-- end sw -->
+            </div><!-- end menu-wrapper -->
+        </div>
+        
+
+        <div class="container rw2">
+          <ul class="nau navbar-nav list-unstyled">
+            <li><a href="#" class="homelink">Home</a>&nbsp &raquo; &nbsp &nbsp</li>&nbsp 
+            <li ><span>Other Categories : BHPC, Auto & Industrial and Many More</span></li>
+            
+            
+          </ul>  
+        </div>
+
+      
+        <div class="container rw3">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Categories</h3>
+              <ul>
+                <ul class="list-unstyled">
+                  <li class="fitness"><a class="fitlink" href="#">Fitness</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Beauty & Personal Health</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Building & Construction</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Books</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Groceries</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Animals & Pets</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Stationery</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Musical Equipment</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">Automotive & Industrial</a></li>
+                  <li class="fitness"><a class="fitlink" href="#">View All</a></li>
+                </ul>
+              </ul>
+            </div>
+            <div class="col-md-8 cartsummary">
+              <div id="myCarousel" class="carousel slide carousel1" data-ride="carousel">
+       
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img/infinix-phones.jpg">
+                  </div>
+
+                  <div class="item">
+                    <img src="img/Iphone.jpg">
+                  </div>
+                
+                  
+
+                  <div class="item">
+                    <img src="img/javaOS.jpg">
+                  </div>
+                </div>
+
+               
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+
+        <div class="container">
+          <div>
+            <img src="img/sport.png">
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="img/sf1.png">
+              </div>
+              <div class="col-md-2">
+                <img src="img/sf2.png">
+              </div>
+              <div class="col-md-2">
+                <img src="img/sf3.png">
+              </div>
+              <div class="col-md-2">
+                <img src="img/sf4.png">
+              </div>
+              <div class="col-md-2">
+                <img src="img/sf5.png">
+              </div>
+              <div class="col-md-2">
+                <img src="img/sf6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="container">
+          <img src="img/shopb.png">
+        </div>
+     
+        
+        
+       
+
+
+      </div>
+
+
+      
+     
+    
+
+      <div class="container">
+        <div class="img text-center">
+          <i class="imgsprit"></i>
+
+        </div>
+      </div>
+      <footer>
+
+      
+        <div class="container konga">
+          <div class="row">
+            <div class="col-md-9 nine">
+              <div class="col-md-12">
+                <ul class="nau navbar-nav hr list-unstyled">
+                  <li><span class="heading"><strong>Buying on Konga</strong></span>&nbsp &nbsp &nbsp </li>
+                  <li class="r1"><a  class="white" href="#">Buyer Safety Centre</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Konga Buyer Protection</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">How to Shop on Konga  </a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Konga Return Policy</a></li>
+                  <li>&nbsp<a  class="white" href="#">Delivery</a></li>
+                </ul>                   
+              </div>
+              <div class="col-md-12">
+                <ul class="nau navbar-nav hr list-unstyled">
+                  <span class="heading">Konga </span><br> 
+                  <li class="kon">&nbsp<a  class="white" href="#">Contact Us</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">About Us</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">How to Shop on Konga  </a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Forum</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Careers</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Become an Affiliate</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">FAQ</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Site Map</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Our Blog</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">e-Gift Voucher</a></li>
+                  <li>&nbsp<a  class="white" href="#">Bulk Purchase </a></li>
+                  
+                </ul>                   
+              </div>
+              <div class="col-md-12">
+                <ul class="nau navbar-nav hr list-unstyled">
+                  <li><span class="heading"><strong>Payment</strong></span>&nbsp &nbsp &nbsp </li>
+                  <li class="">&nbsp<a  class="white" href="#">KongaPay</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#">Wallet</a></li>
+                  <li>&nbsp<a  class="white" href="#">Pay on Delivery</a></li>
+                </ul> 
+                <div class="imgm text-center">
+                  <i class="imgmaster"></i>
+                </div> <br> 
+
+                <div class="imgtb text-center">
+                  <i class="imgtbank"></i>
+                </div>    
+
+                <br> 
+                <span class="heading">Shipping</span>
+                <div class="imgsh text-center">
+                  <i class="imgship"></i>
+                </div>                
+              </div>
+              <div class="col-md-12">
+                <ul class="nau navbar-nav list-unstyled">
+                  <li><span  class="heading1"><strong>Policies:</strong></span>&nbsp &nbsp &nbsp </li>
+                  <li class="r1"><a  class="white" href="#"> Terms of use</a></li>
+                  <li class="r1">&nbsp<a  class="white" href="#"> Privacy</a></li>
+                  <li>&nbsp<a  class="white" href="#">Authentic Items</a></li>
+                  
+                </ul>
+                                 
+              </div>
+              <span  class="white">Copyright © 2017 Konga.com. All rights reserved.</span>  
+            </div>
+
+            <div class="col-md-3">
+              <div class="col-md-12"><span class="heading1"><strong>Shop Easier!</strong></span></div>
+              <div class="row">
+                  <div class="col-md-2">
+                    <div class="imga text-center">
+                      <i class="imgapple"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="imgapp text-center">
+                      <i class="imgapps"></i>
+                    </div>
+                  </div>
+                <div class="col-md-8">
+                  <span class="whitez">Download the Konga </span> <br><span class="whitez">Mobile App Today!</span>  
+                </div>
+              </div><br>
+              <div class="col-md-12"><span class="heading"><strong>Newsletter</strong></span></div><br> 
+              <div class="col-md-12"><span class="white">Subscribe for Special Offers, Promos & Deals</span></div><br>
+              <div class="row sub">
+                <div class="col-md-2">
+                  <input type="email" name="email" id="newsletter" placeholder="Enter email address" class="input-text required-entry validate-email newsinput">
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" value="Male" title="Subscribe" class="button subscribe">Subscribe</button>
+                </div>
+              </div>
+              <div class="col-md-12"><span class="heading">Keep in Touch</span></div><br> 
+              <div class="col-md-12"><span class="heading">01 460 5555 or 0809 460 5555</span></div>
+              <div class="col-md-12">
+                <div class="imgface text-center">
+                  <i class="imgfacebook"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br><br><br><br><br>
+                
+        <div class="containerz">
+          <img class="pull-right live" src="img/liveHelp.png">
+        </div>
+
+
+           
+            
+        
+                
+                
+        
+      
+      </footer>
+         
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
